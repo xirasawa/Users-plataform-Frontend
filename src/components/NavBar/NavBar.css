@@ -1,0 +1,24 @@
+.navBar {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 1.5rem 2rem;
+  background-color: #17191f;
+}
+
+.navBar h2 a {
+  opacity: 1;
+}
+
+.navBar ul {
+  display: flex;
+  gap: 1.2rem;
+}
+
+.navBar ul .newUserbutton {
+  border: 1px solid;
+  border-color: white;
+  border-radius: 7px;
+
+  padding: 0.75rem;
+}

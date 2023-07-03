@@ -1,0 +1,87 @@
+.home {
+  margin-top: 4rem;
+}
+
+.home .usersText {
+  margin-bottom: 1.25rem;
+}
+
+.card {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 1.2rem 2.5rem;
+  margin-bottom: 1rem;
+
+  border: 1px solid;
+  border-color: white;
+  border-radius: 13px;
+  background-color: #17191b;
+}
+
+.userContent {
+  display: flex;
+  gap: 2.5rem;
+}
+
+.card img {
+  width: 6rem;
+  height: 6rem;
+  border-radius: 100%;
+}
+
+.textContent {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  gap: 0.25rem;
+}
+
+.configIcons {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: auto;
+  gap: 1rem;
+  opacity: 0;
+}
+
+.card:hover .configIcons {
+  opacity: 1;
+  transition: 0.3s;
+}
+
+.configIcons .trashIcon {
+  width: 2.2rem;
+}
+
+.configIcons .trashIcon:hover {
+  transition: 0.3s;
+  width: 2.4rem;
+}
+
+.configIcons .editIcon {
+  width: 1.6rem;
+}
+
+.configIcons .editIcon:hover {
+  transition: 0.3s;
+  width: 1.8rem;
+}
+
+.noUsers {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  margin-top: 3rem;
+  gap: 1rem;
+}
+
+.noUsers .newUserbutton {
+  border: 1px solid;
+  border-color: white;
+  border-radius: 7px;
+
+  padding: 0.75rem;
+}

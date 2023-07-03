@@ -1,17 +1,42 @@
-import React from 'react';
-import ReactDOM from 'react-dom/client';
-import './index.css';
-import App from './App';
-import reportWebVitals from './reportWebVitals';
+import React from 'react'
+import ReactDOM from 'react-dom/client'
+import reportWebVitals from './reportWebVitals'
+import { createBrowserRouter, RouterProvider } from 'react-router-dom'
+import './api/client'
+import App from './App'
 
-const root = ReactDOM.createRoot(document.getElementById('root'));
+// Routes
+import Home from './routes/Home/Home'
+import NewUser from './routes/NewUser/NewUser'
+import EditUser from './routes/EditUser/EditUser'
+
+import './index.css'
+
+const router = createBrowserRouter([
+  {
+    element: <App />,
+    children: [
+      {
+        path: '/',
+        element: <Home />
+      },
+      {
+        path: '/new-user',
+        element: <NewUser />
+      },
+      {
+        path: '/edit-user/:id',
+        element: <EditUser />
+      }
+    ]
+  }
+])
+
+const root = ReactDOM.createRoot(document.getElementById('root'))
 root.render(
   <React.StrictMode>
-    <App />
+    <RouterProvider router={router} />
   </React.StrictMode>
-);
+)
 
-// If you want to start measuring performance in your app, pass a function
-// to log results (for example: reportWebVitals(console.log))
-// or send to an analytics endpoint. Learn more: https://bit.ly/CRA-vitals
-reportWebVitals();
+reportWebVitals()

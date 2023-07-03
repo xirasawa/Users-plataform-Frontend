@@ -1,0 +1,51 @@
+.newUser {
+  margin-top: 4rem;
+}
+
+.newUser h2 {
+  text-align: center;
+  margin-bottom: 1rem;
+}
+
+form {
+  max-width: 500px;
+  width: 100%;
+  margin: 0 auto;
+}
+
+.form {
+  display: flex;
+  flex-direction: column;
+  margin-bottom: 1rem;
+}
+
+.form label {
+  margin-bottom: 0.5rem;
+}
+
+.form input {
+  padding: 0.8rem;
+  border-radius: 5px;
+  border: none;
+}
+
+.form input:hover {
+  opacity: 0.9;
+}
+
+.newUser .button {
+  margin-top: 0.5rem;
+  padding: 1rem;
+
+  border-color: white;
+  border-radius: 10px;
+
+  cursor: pointer;
+  font-size: 11pt;
+  background-color: #17191f;
+  color: white;
+}
+
+.newUser .button:hover {
+  opacity: 0.75;
+}
